@@ -1805,7 +1805,10 @@ function parseModelString(
         const blobKey = prefix + id;
         // We should have this backingEntry in the store already because we emitted
         // it before referencing it. It should be a Blob.
-        const backingEntry: Blob = (response._formData.get(blobKey): any);
+        const backingEntry = response._formData.get(blobKey);
+        if (!(backingEntry instanceof Blob)) {
+          throw new Error('Referenced Blob is not a Blob.');
+        }
         return backingEntry;
       }
       case 'R': {
