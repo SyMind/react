@@ -1,7 +1,7 @@
 {
   "name": "react-server-dom-rspack",
   "description": "React Server Components bindings for DOM using Rspack. This is intended to be integrated into meta-frameworks. It is not intended to be imported directly.",
-  "version": "19.3.0",
+  "version": "0.1.1",
   "keywords": [
     "react"
   ],
@@ -79,8 +79,8 @@
     "node": ">=0.10.0"
   },
   "peerDependencies": {
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "@rspack/core": "^2.2.0-0"
   }
 }
